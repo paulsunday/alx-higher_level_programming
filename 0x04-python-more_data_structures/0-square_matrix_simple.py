@@ -1,5 +1,3 @@
 #!/usr/python3
 def square_matrix_simple(matrix=[]):
-    copy_matrix[[value**2 for value in row] for row in matrix]
-
-    return copy_matrix
+    return [list(map((lambda x: x * x), els)) for elm in matrix]
