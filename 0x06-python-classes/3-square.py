@@ -9,9 +9,8 @@ class Square:
         """
         initializes square
         Args:
-            size: size of the side of square
+            size: size of side of square
         """
-
 
         if type(size) is int:
             if size < 0:
@@ -21,14 +20,11 @@ class Square:
         else:
             raise TypeError('size must be an integer')
 
-    
     def area(self):
-            """
-            finds area of square
-            Returns:
-                the area of the square
-            """
+        """
+        finds area of square
+        Returns:
+            the area of the square
+        """
 
-
-            return self.__size ** 2
-
+        return self.__size ** 2
