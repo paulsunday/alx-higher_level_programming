@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 """ defines a square """
+
+
 class Square:
     """ square with private instance attribute size """
+
     def __init__(self, size=0):
         """
         initializes square
@@ -18,7 +21,8 @@ class Square:
         else:
             raise TypeError('size must be an integer')
 
-        def area(self):
+    
+    def area(self):
             """
             finds area of square
             Returns:
