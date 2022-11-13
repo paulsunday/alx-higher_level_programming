@@ -19,4 +19,4 @@ def roman_to_int(roman_string):
         elif i == "M":
             num_str.append(1000)
     
-    return (sum(num_str)
+    return (sum(num_str))
