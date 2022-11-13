@@ -1,21 +1,22 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
-if type(roman_string) is not str or roman_string is None:
-    return 0
- roman_dict = {
-         'I': 1,
-         'V': 5,
-         'X': 10,
-         'L': 50,
-         'C': 100,
-         'D': 500,
-         'M': 1000
-         }
- decs = [roman_dict[x] for x in roman_string]
- output = 0
- for i in range(len(desc)):
-     output += decs[i]
-     if decs[i - 1] < decs[i]
-     if decs[i - 1] < decs[i] and i != 0:
-         output -= (decs[i - 1] + decs[i - 1])
-    return output
+    if roman_string == None:
+        return 0
+    num_str = []
+    for i in roman_string:
+        if i == "I":
+            num_str.append(1)
+        elif i == "V":
+            num_str.append(5)
+        elif i  == "X":
+            num_str.append(10)
+        elif i == "L":
+            num_str.append(50)
+        elif i == "C":
+            num_str.append(100)
+        elif i == "D":
+            num_str.append(500)
+        elif i == "M":
+            num_str.append(1000)
+    
+    return (sum(num_str)
