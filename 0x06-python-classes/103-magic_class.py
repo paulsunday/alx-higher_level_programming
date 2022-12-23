@@ -13,10 +13,7 @@ class MagicClass:
         self.__radius = radius
 
     def area(self):
-        """calculates the square's area
-        Returns:
-            The area of the square
-        """
+        """calculates the area of the cicle"""
         return (self.__radius ** 2) * math.pi
 
     def circumference(self):
