@@ -23,7 +23,6 @@ if __name__ == "__main__":
     for i in range(n):
         a.append([i, None])
 
-
     def it_already_exists(y):
         """Checks that a queen does not already exist in the value y"""
         for x in range(n):
@@ -33,19 +32,19 @@ if __name__ == "__main__":
 
     def reject(x, y):
         """It determines whether to reject the solution"""
-        if it_already_exists(y):
+        if (it_already_exists(y)):
             return False
         i = 0
         while(i < x):
             if abs(a[i][1] - y) == abs(i - x):
                 return False
             i += 1
-            return True
+        return True
 
     def clear_a(x):
         """It clears the answers from the point of failure"""
         for c in range(x, n):
-            a[c][1] == None
+            a[c][1] = None
 
     def nqueens(x):
         """The recursive backtracking function to find the solution"""
@@ -53,10 +52,10 @@ if __name__ == "__main__":
             clear_a(x)
             if reject(x, y):
                 a[x][1] = y
-                if (x == n - 1):
+                if (x == n - 1): # This line accepts the sitation
                     print(a)
                 else:
-                    nqueens(x + 1)
+                   nqueens(x + 1)
 
 
     nqueens(0)
