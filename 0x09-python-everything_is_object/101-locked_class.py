@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+# 101-locked_class.py
+
 """ This class defines a locked class"""
+
+
 class LockedClass:
     """
     prevents the user from instantiating a new LockedClass
@@ -7,4 +11,4 @@ class LockedClass:
     slot which is used to specify a fixed attribute
     """
 
-    __slot__ = ["first_name"]
+    __slots__ = ["first_name"]
