@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # 101-locked_class.py
 
-""" This class defines a locked class"""
+""" Defines a locked class"""
 
 
 class LockedClass:
