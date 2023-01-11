@@ -1,12 +1,10 @@
 #!/usr/bin/python3
 """
-This is a class that is inherited from another class
+This is a class that defines an area inherited from another class
 """
 
 
 class BaseGeometry:
-    def area(self):
-    """
-    This class raises an exception error because thre area was not defined
-    """
+    """Raise an Exception on the area attribute"""
+    def area():
         raise Exception("area() is not implemented")
