@@ -5,7 +5,8 @@ This is a class that is inherited from another class
 
 
 class BaseGeometry:
+    def area(self):
     """
     This class raises an exception error because thre area was not defined
     """
-    raise Exception("area() is not implemented")
+        raise Exception("area() is not implemented")
