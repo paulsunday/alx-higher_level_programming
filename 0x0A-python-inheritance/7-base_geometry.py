@@ -3,6 +3,7 @@
 
 
 class BaseGeometry:
+    """Thi is a class that is based on 6-based_geometry"""
     def area(self):
         """This is a function that raise an exception error
         if the area of the class is not defined
