@@ -1,11 +1,9 @@
 #!/usr/bin/python3
-"""This is a program of a Rectangle class
-a subclass of 7-base_geometry
-"""
+"""Defines a Rectangle class"""
 
 
-BaseGeometry = __import__("7-base_geometry").baseGeometry
-
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
+"""imported a method from a file """
 
 class Rectangle(BaseGeometry):
     """This is a rectangle class that is a subclass of
@@ -18,6 +16,10 @@ class Rectangle(BaseGeometry):
         self.integer_validator("height", height)
         self.__height = height
 
+    def area(self):
+        """Defines the area of the rectangle"""
+        return self.__width * self.__height
+
     def __str__(self):
         """This is a string method that prints and return the rectangle"""
-        return "[Rectangle] {}/{}".format(self.__width, self.height)
+        return "[Rectangle] {}/{}".format(self.__width, self.__height)
