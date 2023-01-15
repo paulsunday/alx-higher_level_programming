@@ -5,6 +5,7 @@
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 """imported a method from a file """
 
+
 class Rectangle(BaseGeometry):
     """This is a rectangle class that is a subclass of
     7-base_geometry, and inherits a method from it"""
