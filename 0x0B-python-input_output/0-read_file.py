@@ -3,6 +3,6 @@
 
 
 def read_file(filename=""):
-	"""defines a txt file using the UTF-8 encoding format"""
-	with open(filename, encoding="utf-8") as f:
-	print(f.read())	
+    """defines a txt file using the UTF-8 encoding format"""
+    with open(filename, encoding="utf-8") as f:
+        print(f.read(), end="")
