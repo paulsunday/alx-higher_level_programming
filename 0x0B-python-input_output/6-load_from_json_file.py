@@ -8,4 +8,5 @@ import json
 def load_from_json_file(filename):
     """Defines a function that creates an obj ffrom json file"""
     with open(filename) as f:
-        json.load(filename)
+        the_json_data = json.load(filename)
+    return the_json_data
