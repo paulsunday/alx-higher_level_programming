@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """
+contains a function that writes into a file
+"""
 
 def write_file(filename="", text=""):
     """Write a file with the keyword"""
