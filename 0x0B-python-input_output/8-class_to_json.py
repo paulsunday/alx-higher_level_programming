@@ -5,4 +5,6 @@ import json
 
 
 def class_to_json(obj):
-    return json.loads(json.dumps(obj, default=lambda o: o.__dict__))
+    """A function that returns dict
+    description with simple data structure"""
+    return obj.__dict__
