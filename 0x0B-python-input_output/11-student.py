@@ -1,4 +1,4 @@
-#!/usr/bin/pyton3
+#!/usr/bin/python3
 """contains a class studdent"""
 
 
@@ -9,7 +9,7 @@ class Student:
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
-    
+
     def to_json(self, attr=None):
         """returns a dictionary repre of a student instance
         with specific attributes"""
@@ -22,7 +22,7 @@ class Student:
             except FileNotFoundError:
                 pass
         return new_dict
-    
+
     def reload_from_json(self, json):
         """Replaces all attr of a student instance"""
         for key in json:
@@ -30,4 +30,3 @@ class Student:
                 setattr(self, key, json[key])
             except FileNotFoundError:
                 pass
-
