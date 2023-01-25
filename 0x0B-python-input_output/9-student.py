@@ -3,9 +3,9 @@
 
 
 class Student:
-    """Has a public instance that has 
+    """Has a public instance that has
     first name, last name and age of the student"""
-    
+
     def __init__(self, first_name, last_name, age):
         """The public inistialization of the student class"""
         self.first_name = first_name
