@@ -3,7 +3,7 @@
 
 
 def pascal_triangle(n):
-    """Represents a paschal's triangle of size n. and 
+    """Represents a paschal's triangle of size n. and
     Returns a list of list of int representing the triangle"""
     if n <= 0:
         return []
