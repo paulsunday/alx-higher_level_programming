@@ -9,7 +9,7 @@ status_tally = {"200": 0, "301": 0, "400": 0, "401": 0,
 i = 0
 try:
     for line in sys.stdin:
-        tokens = lines.split()
+        tokens = line.split()
         if len(tokens) >= 2:
             a = i
             if tokens[-2] in status_tally:
