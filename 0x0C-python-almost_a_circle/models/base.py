@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 """Contains a class called Base"""
+
 import json
 import csv
 import os.path
+
 
 class Base:
     """Class base for other classes"""
